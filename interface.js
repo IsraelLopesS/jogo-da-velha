@@ -15,7 +15,7 @@ function Click(event){
     let res = document.getElementById("resultado");
 
     if(move(postion)){
-        res.innerHTML ="<h1>Fim do jogo! - O jogador vencedor foi "+currentplayer+"</h1>"
+        res.innerHTML ="<h1>Fim do jogo!"
     }
     upsquare(postion);
 
@@ -26,7 +26,5 @@ function upsquare(postion){
     square.innerHTML = '<div class='+symbol+'></div>';
 }
 function reset(){
-    let game = false;
-    let board = ['','','','','','','','',''];
-    let currentplayer = 0;
+    location.reload()
 }
